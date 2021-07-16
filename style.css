@@ -1,0 +1,632 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----COLORS-----#292929 #9B9B9B*/
+/*-----FONTS PROPERTIES-----*/
+body {
+  background-color: #eaeaea;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+body section {
+  padding: 20px 5%;
+}
+
+.obal {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* MENU */
+.navigace {
+  margin: 0;
+  padding: 1rem;
+  background-color: #333333;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 5px 30px 5px #00000026;
+          box-shadow: 0 5px 30px 5px #00000026;
+  width: 100%;
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 15px;}
+  */
+}
+
+.navigace a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navigace a:hover {
+  color: #a58c48;
+}
+
+.navigace li {
+  display: inline-block;
+  padding: 0.1rem 2rem;
+  /*position: relative;
+       left: 10px; */
+}
+
+/*-----hlavicka---*/
+.header {
+  padding: 3rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0005), to(#000000ab)), url(obrazky/work_space.jpg);
+  background-image: linear-gradient(#0005, #000000ab), url(obrazky/work_space.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 27rem;
+}
+
+.header__text {
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__text--title-name {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+.header__text--under-title {
+  font-size: 1.5rem;
+  color: #a58c48;
+  text-shadow: 0 3px 10px #333333;
+}
+
+.header__profile-foto {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 50%;
+  border: 4px solid #a58c48;
+  overflow: auto;
+}
+
+/*-----o mne---*/
+.about-me {
+  background-color: #333333;
+}
+
+.about-me__text {
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-me__text--long {
+  margin-top: 4rem;
+}
+
+/*-----sluzby---*/
+.services {
+  background-color: #a58c48;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+  -ms-grid-rows: (25%)[4];
+      grid-template-rows: repeat(4, 25%);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-container__element {
+  place-self: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.grid-container__element--down {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.services__text {
+  text-align: center;
+  color: #333333;
+}
+
+.services__text--title {
+  font-size: 1.7rem;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  color: #a58c48;
+}
+
+.services__text--title-big {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #eaeaea;
+}
+
+.services__text--descirbe {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.services__text img {
+  max-width: 30%;
+}
+
+.services__button {
+  background-color: #333333;
+  border-radius: 0.5rem;
+  width: 7rem;
+  height: 2rem;
+  margin: 1rem auto;
+}
+
+.services__button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ------------podstranky services------------------- */
+.ukazky-praci h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.ukazky-praci__popis {
+  margin-bottom: 1rem;
+}
+
+.ukazky-praci__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+}
+
+.ukazky-praci img {
+  max-width: 100%;
+}
+
+.ukazky-praci__rozcestnik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.ukazky-praci__rozcestnik a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #a58c48;
+  padding: 0 2rem;
+  border: 2px dashed #333333;
+}
+
+/*-----pracovní zkusenosti---*/
+.work_experience {
+  background-color: #ffffff;
+}
+
+.work_experience__text {
+  text-align: left;
+}
+
+.work_experience__text--title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #a58c48;
+}
+
+.work_experience__text--popis {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.work_experience__btn {
+  background-color: #ffffff;
+  border: 2px solid #a58c48;
+  border-radius: 0.5rem;
+  width: 12rem;
+  height: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.work_experience__btn a {
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/*-----reference---*/
+.references {
+  background-color: #ffffff;
+}
+
+.references__fotogalerie {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+}
+
+.references__fotogalerie > div > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.references__text {
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.references__text--title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/*-----kontakty---*/
+.kontakty {
+  background-color: #333333;
+  text-align: center;
+}
+
+.kontakty__text {
+  color: #ffffff;
+  text-align: center;
+}
+
+.kontakty__text--title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #a58c48;
+}
+
+.kontakty__text--name {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #a58c48;
+}
+
+.kontakty__text--mail {
+  text-decoration: none;
+}
+
+.kontakty__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.kontakty__icons > a svg {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+/* -----------Github animation------------------ */
+#github {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#github:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#github:hover #github-path {
+  fill: #ffffff;
+}
+
+/* ------------Instagram animation----------------- */
+#instagram:hover #instagram {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#instagram:hover #insta-dot {
+  -webkit-animation: flash 0.2s ease;
+          animation: flash 0.2s ease;
+}
+
+@-webkit-keyframes flash {
+  to {
+    fill: #ffffff;
+  }
+}
+
+@keyframes flash {
+  to {
+    fill: #ffffff;
+  }
+}
+
+#insta-inner {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#instagram:hover #insta-inner {
+  -webkit-animation: squeeze 0.2s ease;
+          animation: squeeze 0.2s ease;
+}
+
+@-webkit-keyframes squeeze {
+  to {
+    -webkit-transform: rotateX(78deg);
+            transform: rotateX(78deg);
+  }
+}
+
+@keyframes squeeze {
+  to {
+    -webkit-transform: rotateX(78deg);
+            transform: rotateX(78deg);
+  }
+}
+
+/* -----------Linkedid animation------------------ */
+#linkedin {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#linkedin:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+#linkedin:hover #linkedin-path {
+  fill: #ffffff;
+}
+
+/*-----paticka---*/
+.footer {
+  background-color: #a58c48;
+  margin: 0;
+}
+
+.footer__text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+/* --------------FAQ------------------ */
+details {
+  background-color: #dddddd;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+details summary {
+  background-color: #a58c48;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+details summary:hover {
+  text-decoration: underline;
+}
+
+details p {
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+}
+
+/*----------MEDIA QUERIES----------*/
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .references__fotogalerie {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    max-height: 25rem;
+  }
+  .header__text--title-name {
+    font-size: 2.8rem;
+  }
+  .header__text--under-title {
+    font-size: 1.6rem;
+  }
+  .header__profile-foto {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .header {
+    max-height: 21rem;
+  }
+  .header__text--title-name {
+    font-size: 2.8rem;
+  }
+  .header__text--under-title {
+    font-size: 1.6rem;
+  }
+  .header__profile-foto {
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .references__fotogalerie {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .header {
+    max-height: 22rem;
+  }
+  .header__text--title-name {
+    font-size: 3rem;
+  }
+  .header__text--under-title {
+    font-size: 1.8rem;
+  }
+  .header__profile-foto {
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .grid-container {
+    -ms-grid-columns: (minmax(100px, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    -ms-grid-rows: 1fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+  .grid-container__element {
+    height: 100%;
+  }
+  .grid-container__element--down {
+    -ms-grid-column: span 3;
+        grid-column-start: span 3;
+  }
+  .navigace {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+  }
+  .navigace a {
+    line-height: 50px;
+    position: relative;
+  }
+  .navigace ul {
+    width: 100%;
+    text-align: center;
+  }
+  .navigace a:hover::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #eaeaeab6;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.header__text--title-name {
+  -webkit-animation: text 3s 1;
+          animation: text 3s 1;
+}
+
+.ukazky-praci__photos {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ukazky-praci img {
+  max-width: 48%;
+}
+
+/* ----------------animace nadpis------------------------*/
+.kontajner {
+  width: 100%;
+  text-align: center;
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+@-webkit-keyframes text {
+  0% {
+    color: #eaeaea;
+  }
+  30% {
+    letter-spacing: 25px;
+  }
+  80% {
+    letter-spacing: 8px;
+  }
+}
+
+@keyframes text {
+  0% {
+    color: #eaeaea;
+  }
+  30% {
+    letter-spacing: 25px;
+  }
+  80% {
+    letter-spacing: 8px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
